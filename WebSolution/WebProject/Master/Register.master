@@ -1,0 +1,13 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master/Simple.Master" AutoEventWireup="true"
+    CodeBehind="Register.Master.cs" Inherits="WebProject.Master.Register" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="SimpleContentHead" runat="server">
+    <asp:ContentPlaceHolder ID="HeadRegister" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="FormBodySimple" runat="server">
+    <div class="divRegister">
+        <asp:ContentPlaceHolder ID="FormRegisterBody" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

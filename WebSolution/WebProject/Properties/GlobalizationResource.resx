@@ -1,0 +1,747 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Application_ForgotPassword" xml:space="preserve">
+    <value>Esqueci a senha</value>
+  </data>
+  <data name="Application_LoginAccess" xml:space="preserve">
+    <value>Acesso ao sistema</value>
+  </data>
+  <data name="Application_LoginFillFields" xml:space="preserve">
+    <value>Preencha os campos abaixo para acessar o sistema.</value>
+  </data>
+  <data name="Application_MessageError" xml:space="preserve">
+    <value>Ocorreu um erro no sistema</value>
+  </data>
+  <data name="Application_Title" xml:space="preserve">
+    <value>Numeric Platanum</value>
+  </data>
+  <data name="FRWEntity_Block" xml:space="preserve">
+    <value>Bloco</value>
+  </data>
+  <data name="FRWEntity_Company" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="FRWEntity_CompanyName" xml:space="preserve">
+    <value>Razão Social</value>
+  </data>
+  <data name="FRWEntity_Component" xml:space="preserve">
+    <value>Componente</value>
+  </data>
+  <data name="FRWEntity_ComponentNameId" xml:space="preserve">
+    <value>Componente ID</value>
+  </data>
+  <data name="FRWEntity_DataAccess" xml:space="preserve">
+    <value>Data de Acesso</value>
+  </data>
+  <data name="FRWEntity_DataType" xml:space="preserve">
+    <value>Tipo de dados</value>
+  </data>
+  <data name="FRWEntity_DateUpdated" xml:space="preserve">
+    <value>Data de atualização</value>
+  </data>
+  <data name="FRWEntity_DefaultValue" xml:space="preserve">
+    <value>Valor padrão</value>
+  </data>
+  <data name="FRWEntity_Description" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="FRWEntity_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="FRWEntity_FantasyName" xml:space="preserve">
+    <value>Nome fantasia</value>
+  </data>
+  <data name="FRWEntity_Height" xml:space="preserve">
+    <value>Altura</value>
+  </data>
+  <data name="FRWEntity_ID" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="FRWEntity_ImageUrl" xml:space="preserve">
+    <value>Url Imagem Menu</value>
+  </data>
+  <data name="FRWEntity_IPv4_External" xml:space="preserve">
+    <value>IPv4 Externo</value>
+  </data>
+  <data name="FRWEntity_IPv4_Internal" xml:space="preserve">
+    <value>IPv4 Interno</value>
+  </data>
+  <data name="FRWEntity_IPv6_External" xml:space="preserve">
+    <value>IPv6 Externo</value>
+  </data>
+  <data name="FRWEntity_IPv6_Internal" xml:space="preserve">
+    <value>IPv6 Interno</value>
+  </data>
+  <data name="FRWEntity_IsAccessAllowed" xml:space="preserve">
+    <value>Usuário pode acessar o Sistema?</value>
+  </data>
+  <data name="FRWEntity_IsCompanyRequired" xml:space="preserve">
+    <value>Empresa obrigatória</value>
+  </data>
+  <data name="FRWEntity_IsDefaultCompany" xml:space="preserve">
+    <value>Empresa padrão</value>
+  </data>
+  <data name="FRWEntity_IsEditable" xml:space="preserve">
+    <value>Editável</value>
+  </data>
+  <data name="FRWEntity_IsEnable" xml:space="preserve">
+    <value>Habilitado</value>
+  </data>
+  <data name="FRWEntity_IsPreview" xml:space="preserve">
+    <value>Permite visualizar</value>
+  </data>
+  <data name="FRWEntity_IsReadOnly" xml:space="preserve">
+    <value>Somente leitura</value>
+  </data>
+  <data name="FRWEntity_IsVisible" xml:space="preserve">
+    <value>Visível</value>
+  </data>
+  <data name="FRWEntity_KeyDatabase" xml:space="preserve">
+    <value>Chave da tabela</value>
+  </data>
+  <data name="FRWEntity_Menu" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="FRWEntity_MenuParent" xml:space="preserve">
+    <value>Menu Pai</value>
+  </data>
+  <data name="FRWEntity_MinHeight" xml:space="preserve">
+    <value>Altura Mínima</value>
+  </data>
+  <data name="FRWEntity_MinWidth" xml:space="preserve">
+    <value>Largura Mínima</value>
+  </data>
+  <data name="FRWEntity_Param" xml:space="preserve">
+    <value>Parâmetro</value>
+  </data>
+  <data name="FRWEntity_Phone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="FRWEntity_Profile" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+  <data name="FRWEntity_RedefinePswdNextLogin" xml:space="preserve">
+    <value>Redefinir Senha Próximo Login?</value>
+  </data>
+  <data name="FRWEntity_Regex" xml:space="preserve">
+    <value>Expressão regular</value>
+  </data>
+  <data name="FRWEntity_Sequence" xml:space="preserve">
+    <value>Sequência</value>
+  </data>
+  <data name="FRWEntity_SessionID" xml:space="preserve">
+    <value>ID da Seção</value>
+  </data>
+  <data name="FRWEntity_TranslateKeyName" xml:space="preserve">
+    <value>Chave de tradução</value>
+  </data>
+  <data name="FRWEntity_TypeName" xml:space="preserve">
+    <value>Nome do tipo</value>
+  </data>
+  <data name="FRWEntity_User" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="FRWEntity_UserFullName" xml:space="preserve">
+    <value>Nome Completo</value>
+  </data>
+  <data name="FRWEntity_UserLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="FRWEntity_UserPassword" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="FRWEntity_Value" xml:space="preserve">
+    <value>Valor</value>
+  </data>
+  <data name="FRWEntity_Width" xml:space="preserve">
+    <value>Largura</value>
+  </data>
+  <data name="FRWEntity_Window" xml:space="preserve">
+    <value>Tela</value>
+  </data>
+  <data name="FRWEntity_WindowAlias" xml:space="preserve">
+    <value>Alias</value>
+  </data>
+  <data name="FRWEntity_WindowDescription" xml:space="preserve">
+    <value>Descrição da Tela</value>
+  </data>
+  <data name="FRWEntity_WindowEnum" xml:space="preserve">
+    <value>Enumerador</value>
+  </data>
+  <data name="FRWEntity_WindowPath" xml:space="preserve">
+    <value>Path/URL</value>
+  </data>
+  <data name="FRWEntity_WindowTitle" xml:space="preserve">
+    <value>Nome da Tela</value>
+  </data>
+  <data name="FRWEntity_WindowTitleMenu" xml:space="preserve">
+    <value>Título no Menu</value>
+  </data>
+  <data name="KPComponents_Delete" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="KPComponents_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="KPComponents_IncorrectUserOrPassword" xml:space="preserve">
+    <value>Incorrect User or Password!</value>
+  </data>
+  <data name="KPComponents_MessageExistsRelations" xml:space="preserve">
+    <value>Não foi possível excluir este registro, pois ele já possui relacionamentos!</value>
+  </data>
+  <data name="KPComponents_MessageSelectTableValue" xml:space="preserve">
+    <value>É necessário selecionar um valor na tabela.</value>
+  </data>
+  <data name="KPComponents_New" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="KPComponents_QuestionDeleteReg" xml:space="preserve">
+    <value>Deseja realmente excluir o registro?</value>
+  </data>
+  <data name="KPComponents_SecurityFail" xml:space="preserve">
+    <value>Security Failure.</value>
+  </data>
+  <data name="KPComponents_Select" xml:space="preserve">
+    <value>Selecionar</value>
+  </data>
+  <data name="KPComponents_SessionNotFound" xml:space="preserve">
+    <value>Session was not found!</value>
+  </data>
+  <data name="KPComponents_SessionNotSet" xml:space="preserve">
+    <value>Was not possible to set the session!</value>
+  </data>
+  <data name="KPComponents_SessionObjectNotEntity" xml:space="preserve">
+    <value>The session object is not Entity!</value>
+  </data>
+  <data name="Message_ValidateExistLogin" xml:space="preserve">
+    <value>Este Login já esta cadastrado!</value>
+  </data>
+  <data name="Message_ValidateLoginEmpty" xml:space="preserve">
+    <value>O login não pode conter caracteres de espaço!</value>
+  </data>
+  <data name="Translate_Dashboard" xml:space="preserve">
+    <value>Início</value>
+  </data>
+  <data name="Translate_User" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="Translate_ButtonAdd" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="Translate_ButtonUserRelationship" xml:space="preserve">
+    <value>Relacionar Usuários</value>
+  </data>
+  <data name="Translate_ButtonView" xml:space="preserve">
+    <value>Visualizar</value>
+  </data>
+  <data name="Translate_ZoomWindowTitleUser" xml:space="preserve">
+    <value>Selecione um usuário</value>
+  </data>
+  <data name="Translate_ButtonWindowRelationship" xml:space="preserve">
+    <value>Relacionar Telas</value>
+  </data>
+  <data name="Translate_ZoomWindowTitleWindow" xml:space="preserve">
+    <value>Selecione uma tela</value>
+  </data>
+  <data name="Label_Ciclo" xml:space="preserve">
+    <value>Ciclo</value>
+  </data>
+  <data name="Label_Fase" xml:space="preserve">
+    <value>Fase</value>
+  </data>
+  <data name="Label_Titulo" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="Btn_Novo" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="Btn_Proximo" xml:space="preserve">
+    <value>Próximo</value>
+  </data>
+  <data name="Label_Descricao" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="Label_Problema" xml:space="preserve">
+    <value>Problema</value>
+  </data>
+  <data name="Aba_5W2H" xml:space="preserve">
+    <value>5W2H</value>
+  </data>
+  <data name="Aba_Plano" xml:space="preserve">
+    <value>Plano</value>
+  </data>
+  <data name="Label_Causa" xml:space="preserve">
+    <value>Causa</value>
+  </data>
+  <data name="Label_CincoPorques" xml:space="preserve">
+    <value>Cinco Porques</value>
+  </data>
+  <data name="Label_ComoFazer" xml:space="preserve">
+    <value>Como Fazer?</value>
+  </data>
+  <data name="Label_DataAlteracao" xml:space="preserve">
+    <value>Data Alteração</value>
+  </data>
+  <data name="Label_DataConclusao" xml:space="preserve">
+    <value>Data Conclusão</value>
+  </data>
+  <data name="Label_DataFinal" xml:space="preserve">
+    <value>Data Final</value>
+  </data>
+  <data name="Label_DataInicio" xml:space="preserve">
+    <value>Data Início</value>
+  </data>
+  <data name="Label_Impacto" xml:space="preserve">
+    <value>Qual o impacto?</value>
+  </data>
+  <data name="Label_LoginAlteracao" xml:space="preserve">
+    <value>Login Alteração</value>
+  </data>
+  <data name="Label_Observacao" xml:space="preserve">
+    <value>Observação</value>
+  </data>
+  <data name="Label_Percentual" xml:space="preserve">
+    <value>Percentual de Conclusão</value>
+  </data>
+  <data name="Label_Porque" xml:space="preserve">
+    <value>Por quê?</value>
+  </data>
+  <data name="Label_Responsavel" xml:space="preserve">
+    <value>Responsável</value>
+  </data>
+  <data name="Label_Setor" xml:space="preserve">
+    <value>Aonde?</value>
+  </data>
+  <data name="Label_TituloAcao" xml:space="preserve">
+    <value>Título Ação</value>
+  </data>
+  <data name="Label_Acao" xml:space="preserve">
+    <value>Ação</value>
+  </data>
+  <data name="Label_CincoProquesPai" xml:space="preserve">
+    <value>Cinco Proques Pai</value>
+  </data>
+  <data name="Label_Company" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="Label_DataVerificacao" xml:space="preserve">
+    <value>Data Verificação</value>
+  </data>
+  <data name="Label_Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="Label_LicoesApreendidas" xml:space="preserve">
+    <value>Lições Apreendidas</value>
+  </data>
+  <data name="Label_MetaSolucao" xml:space="preserve">
+    <value>Meta de Solução</value>
+  </data>
+  <data name="Label_MudancasRealizadas" xml:space="preserve">
+    <value>Mudanças Realizadas</value>
+  </data>
+  <data name="Label_Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Label_ProblemaResolvido" xml:space="preserve">
+    <value>Problema Resolvido</value>
+  </data>
+  <data name="Label_Resposta" xml:space="preserve">
+    <value>Resposta</value>
+  </data>
+  <data name="Label_Usuario" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="Label_PercentConclusao" xml:space="preserve">
+    <value>% Concl.</value>
+  </data>
+  <data name="Btn_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Aba_InformacoesProblema" xml:space="preserve">
+    <value>Informações do Problema</value>
+  </data>
+  <data name="Aba_MetaSolucao" xml:space="preserve">
+    <value>Meta de Solução</value>
+  </data>
+  <data name="Label_PercentDeConclusao" xml:space="preserve">
+    <value>% de conclusão</value>
+  </data>
+  <data name="Btn_ClosePlan" xml:space="preserve">
+    <value>Finalizar planejamento</value>
+  </data>
+  <data name="Btn_PlanoAcao" xml:space="preserve">
+    <value>Verificar Plano</value>
+  </data>
+  <data name="Aba_InformacoesBase" xml:space="preserve">
+    <value>Informações base</value>
+  </data>
+  <data name="Aba_Observacoes" xml:space="preserve">
+    <value>Observações</value>
+  </data>
+  <data name="Btn_Fechar" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="Btn_VerificacoesAcao" xml:space="preserve">
+    <value>Visualizar verificações</value>
+  </data>
+  <data name="Btn_VerificarAtividade" xml:space="preserve">
+    <value>Apontar verificação</value>
+  </data>
+  <data name="Btn_Visualizar" xml:space="preserve">
+    <value>Visualizar</value>
+  </data>
+  <data name="Btn_Padronizar" xml:space="preserve">
+    <value>Padronizar</value>
+  </data>
+  <data name="Chk_ProblemaResolvido" xml:space="preserve">
+    <value>O problema foi resolvido?</value>
+  </data>
+  <data name="Cmb_NewCiclo" xml:space="preserve">
+    <value>Deseja executar um novo ciclo do PDCA?</value>
+  </data>
+  <data name="Label_NovoCiclo" xml:space="preserve">
+    <value>Novo Ciclo</value>
+  </data>
+  <data name="Label_TipoGrafico" xml:space="preserve">
+    <value>Tipo de Gráfico</value>
+  </data>
+  <data name="Label_TituloGrafico" xml:space="preserve">
+    <value>Título do Gráfico</value>
+  </data>
+  <data name="Label_DataAnalise" xml:space="preserve">
+    <value>Analisado em</value>
+  </data>
+  <data name="Label_DataRegistro" xml:space="preserve">
+    <value>Resgistrado em</value>
+  </data>
+  <data name="Label_TipoTicket" xml:space="preserve">
+    <value>Tipo</value>
+  </data>
+  <data name="Label_NomeCompleto" xml:space="preserve">
+    <value>Nome completo</value>
+  </data>
+  <data name="Translate_ZoomWindowCiclo" xml:space="preserve">
+    <value>Selecione um ciclo</value>
+  </data>
+  <data name="Label_NovoCicloGerado" xml:space="preserve">
+    <value>Gerado novo ciclo?</value>
+  </data>
+  <data name="Translate_ZoomSelectItem" xml:space="preserve">
+    <value>Selecione um item</value>
+  </data>
+  <data name="Translate_ZoomCausa" xml:space="preserve">
+    <value>Selecione um causa</value>
+  </data>
+  <data name="Translate_ZoomCompany" xml:space="preserve">
+    <value>Selecione uma empresa</value>
+  </data>
+  <data name="Translate_ZoomMenu" xml:space="preserve">
+    <value>Selecione um menu</value>
+  </data>
+  <data name="Translate_ZoomProblema" xml:space="preserve">
+    <value>Selecione um problema</value>
+  </data>
+  <data name="Translate_ZoomResponsavel" xml:space="preserve">
+    <value>Selecione um responsável</value>
+  </data>
+  <data name="Label_Responder" xml:space="preserve">
+    <value>Responder</value>
+  </data>
+  <data name="FRWBtnClose" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="FRWBtnSave" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="Help_Problema_Ciclo" xml:space="preserve">
+    <value>Identifica quantos Ciclos já foram executados para o problema</value>
+  </data>
+  <data name="Help_Problema_Descricao" xml:space="preserve">
+    <value>Aqui você colocará as informações que você conhece do problema a resolver</value>
+  </data>
+  <data name="Help_Problema_Fase" xml:space="preserve">
+    <value>Identifica em qual etapa do PDCA seu problema se encontra</value>
+  </data>
+  <data name="Help_Problema_Meta" xml:space="preserve">
+    <value>Aqui você colocará uma Meta que deseja atingir ao final deste Ciclo</value>
+  </data>
+  <data name="Help_Problema_Responsavel" xml:space="preserve">
+    <value>Aqui será identificado o responsável deste Ciclo</value>
+  </data>
+  <data name="Help_Problema_Titulo" xml:space="preserve">
+    <value>Aqui você deve descrever um título resumido que identifique o problema, de forma quantificável</value>
+  </data>
+  <data name="Help_Close" xml:space="preserve">
+    <value>Fecha a tela</value>
+  </data>
+  <data name="Help_Problema_Proximo" xml:space="preserve">
+    <value>Avança para a próxima etapa do planejamento</value>
+  </data>
+  <data name="Help_ProblemaCausa_BtnDelete" xml:space="preserve">
+    <value>Excluir uma causa</value>
+  </data>
+  <data name="Help_ProblemaCausa_BtnEdit" xml:space="preserve">
+    <value>Editar uma causa</value>
+  </data>
+  <data name="Help_ProblemaCausa_BtnNew" xml:space="preserve">
+    <value>Adicionar uma causa</value>
+  </data>
+  <data name="Help_Problema_DescricaoInformativa" xml:space="preserve">
+    <value>Identifica o título do problema</value>
+  </data>
+  <data name="Help_PlanoAcao_FimPlanejamento" xml:space="preserve">
+    <value>Finalizar planejamento. Passar o problema para a etapa de Execução [DO].</value>
+  </data>
+  <data name="Help_Acao_ComoFazer" xml:space="preserve">
+    <value>Aqui você responderá como se deverá realizar esta atividade</value>
+  </data>
+  <data name="Help_Acao_DataFim" xml:space="preserve">
+    <value>Aqui você determinará a data para finalizar a atividade</value>
+  </data>
+  <data name="Help_Acao_DataInicio" xml:space="preserve">
+    <value>Aqui você determinará a data para iniciar a atividade</value>
+  </data>
+  <data name="Help_Acao_Impacto" xml:space="preserve">
+    <value>Aqui você colocará se esta atividade terá algum impacto, por exemplo: algum custo extra</value>
+  </data>
+  <data name="Help_Acao_Porque" xml:space="preserve">
+    <value>Aqui você responderá por que a atividade precisa ser executada</value>
+  </data>
+  <data name="Help_Acao_Responsavel" xml:space="preserve">
+    <value>Aqui você selecionará o responsável para realizar esta atividade</value>
+  </data>
+  <data name="Help_Acao_Setor" xml:space="preserve">
+    <value>Aqui você colocará aonde será executada esta atividade</value>
+  </data>
+  <data name="Help_Acao_Titulo" xml:space="preserve">
+    <value>Aqui você colocará o título da atividade a realizar</value>
+  </data>
+  <data name="Help_Causa_Informativa" xml:space="preserve">
+    <value>Identifica a causa do brainstorming</value>
+  </data>
+  <data name="Help_CincoPorques_Informativa" xml:space="preserve">
+    <value>Identifica a causa raíz</value>
+  </data>
+  <data name="KPEntity_Description" xml:space="preserve">
+    <value>Descrição</value>
+  </data>
+  <data name="KPEntity_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Label_Agencia" xml:space="preserve">
+    <value>Agência</value>
+  </data>
+  <data name="Label_Apelido" xml:space="preserve">
+    <value>Apelido</value>
+  </data>
+  <data name="Label_Bairro" xml:space="preserve">
+    <value>Bairro</value>
+  </data>
+  <data name="Label_Cargo" xml:space="preserve">
+    <value>Cargo</value>
+  </data>
+  <data name="Label_Celular" xml:space="preserve">
+    <value>Celular</value>
+  </data>
+  <data name="Label_CEP" xml:space="preserve">
+    <value>CEP</value>
+  </data>
+  <data name="Label_Cidade" xml:space="preserve">
+    <value>Cidade</value>
+  </data>
+  <data name="Label_Complemento" xml:space="preserve">
+    <value>Complemento</value>
+  </data>
+  <data name="Label_Conta_Bancaria" xml:space="preserve">
+    <value>Conta Bancária</value>
+  </data>
+  <data name="Label_CPF" xml:space="preserve">
+    <value>CPF</value>
+  </data>
+  <data name="Label_CTPS" xml:space="preserve">
+    <value>CTPS</value>
+  </data>
+  <data name="Label_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Label_Empresa" xml:space="preserve">
+    <value>Empresa</value>
+  </data>
+  <data name="Label_Endereco" xml:space="preserve">
+    <value>Endereço</value>
+  </data>
+  <data name="Label_Genero" xml:space="preserve">
+    <value>Gênero</value>
+  </data>
+  <data name="Label_Habilidades" xml:space="preserve">
+    <value>Habilidades</value>
+  </data>
+  <data name="Label_Habilitacao" xml:space="preserve">
+    <value>Habilitação</value>
+  </data>
+  <data name="Label_Imovel" xml:space="preserve">
+    <value>Imóvel</value>
+  </data>
+  <data name="Label_Nascimento" xml:space="preserve">
+    <value>Nascimento</value>
+  </data>
+  <data name="Label_Numero" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="Label_PIS" xml:space="preserve">
+    <value>PIS</value>
+  </data>
+  <data name="Label_Radio" xml:space="preserve">
+    <value>Radio</value>
+  </data>
+  <data name="Label_Registro_CNH" xml:space="preserve">
+    <value>Registro CNH</value>
+  </data>
+  <data name="Label_RG" xml:space="preserve">
+    <value>RG</value>
+  </data>
+  <data name="Label_Serie" xml:space="preserve">
+    <value>Serie</value>
+  </data>
+  <data name="Label_Skype" xml:space="preserve">
+    <value>Skype</value>
+  </data>
+  <data name="Label_Telefone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="Label_Tipo_Imovel" xml:space="preserve">
+    <value>Tipo Imóvel</value>
+  </data>
+  <data name="Label_UF" xml:space="preserve">
+    <value>UF</value>
+  </data>
+  <data name="Label_UF_Habilitacao" xml:space="preserve">
+    <value>UF Hab.</value>
+  </data>
+  <data name="Aba_Contatos" xml:space="preserve">
+    <value>Contatos</value>
+  </data>
+  <data name="Aba_Outros" xml:space="preserve">
+    <value>Outros</value>
+  </data>
+  <data name="Aba_Principal" xml:space="preserve">
+    <value>Principal</value>
+  </data>
+</root>

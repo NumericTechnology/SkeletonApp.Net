@@ -1,0 +1,15 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master/Base.Master" AutoEventWireup="true"
+    CodeBehind="View.Master.cs" Inherits="WebProject.Master.View" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">
+    <asp:ContentPlaceHolder ID="HeadView" runat="server">
+    </asp:ContentPlaceHolder>
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Styles/Themes/Default/View.css"
+        Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/Themes/Default/KPGridControl.js"
+        Type="JAVASCRIPT" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="FormBody" runat="server">
+    <asp:ContentPlaceHolder ID="BodyView" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

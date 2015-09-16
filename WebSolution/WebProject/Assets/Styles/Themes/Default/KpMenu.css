@@ -1,0 +1,58 @@
+/*
+ * Copyright 2011-2015 Numeric Technology
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ 
+
+body { padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */ }
+
+.MenuUserAction { height: 40px; width: 540px; position: absolute; top: 0; right: 0; z-index: 1050; text-align: right; }
+.MenuUserAction > div{ vertical-align: top; }
+.MenuUserAction .Action { display: inline-block; width: 32px; height: 32px; margin: 4px; padding: 0px; background-repeat: no-repeat; border: none; box-shadow: none; }
+.MenuUserAction .Logout { background: url("/Assets/Imgs/Themes/Default/logout_white.png"); }
+.MenuUserAction .Settings { background: url("/Assets/Imgs/Themes/Default/settings_white.png"); }
+.MenuUserAction .UserCompany { width: 230px; margin: 9px 20px 0px 10px; }
+.MenuUserAction .UserInfo { display: inline-block; height: 36px; margin-right: 10px; margin-top: 4px; color: #FFFFFF; width: 200px; }
+.MenuUserAction .UserInfo .UserName { height: 36px; overflow: hidden; line-height: 33px; }
+
+.Content { top: 46px; }
+.MainMenuBar li a { cursor: default; }
+.MainMenuBar li a[onclick] { cursor: pointer; }
+.PopOverMenuContent a[onclick]:hover { background-color: #0088cc; color: #ffffff; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; padding: 2px; }
+/* Paint Full line -> .PopOverMenuContent a[onclick]:hover { background-color: #0088cc; color: #ffffff; position: absolute; padding-left: 80px; left: 0; right: 0; }*/
+.MainMenuBar { background-color: #003366; border-bottom: #336699 6px solid;	list-style: none; z-index: 1030; height: 40px; position: fixed; top: 0; right: 0; left: 0; margin: 0 !important; padding-left: 40px !important; }
+.MainMenuBar .MenuItem { display: inline-block; }
+.MainMenuBar .MenuItemTitle { display: block; cursor: pointer; clear: both; text-decoration: none; color: #ffffff; font-size: 18px; line-height: 40px; height: 40px; padding: 0 15px !important; font-weight: normal; background: #336699; }
+.MainMenuBar .MenuItemTitle .MenuTitleImage { float: left; display: inline-block; padding-right: 10px; padding-top: 3px; height: 35px; }
+.MainMenuBar .MenuItemTitleToggle { background: #FFFFFF; color: #0088cc; }
+.MainMenuBarToggle { border-bottom: #FFFFFF 6px solid; }
+
+.DropdownMenuHidden { display: none; }
+.DropdownMenu { list-style: none; position: absolute; top: 100%; z-index: 1000; float: left; min-width: 160px; padding: 5px 0 !important; margin: 2px 0 0 !important; background-color: #ffffff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; }
+.DropdownMenu > li > a { text-decoration: none; font-size: 14px; display: block; padding: 3px 20px !important; clear: both; font-weight: normal; line-height: 20px; color: #333333;  white-space: nowrap; cursor: pointer; }
+.DropdownMenu > li > a:hover { background-image: none; color: white; background-color: rgb(0, 129, 194); background-color: rgba(0, 129, 194, 0.5); }
+.DropdownMenu > li > a.MaintainHover { color: white; background-color: #003366; }
+.PopOverMenu { position: absolute; width: 400px; display: none; overflow: hidden; left: 0; max-width: 276px; padding: 1px !important;  text-align: left; white-space: normal; background-color: #ffffff; border: 1px solid #ccc; border: 1px solid rgba(0, 0, 0, 0.2); -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px; -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -webkit-background-clip: padding-box; -moz-background-clip: padding; background-clip: padding-box; -webkit-border-top-left-radius: 0px; -webkit-border-bottom-left-radius: 0px; border-top-left-radius: 0px; border-bottom-left-radius: 0px;}
+.PopOverMenuTitle { padding: 8px 14px !important; margin: 0 !important; font-size: 14px; font-weight: normal; line-height: 18px; background-color: #f7f7f7; border-bottom: 1px solid #ebebeb; -webkit-border-radius: 5px 5px 0 0; -moz-border-radius: 5px 5px 0 0; border-radius: 5px 5px 0 0; }
+.PopOverMenuContent { text-align: left; padding: 9px 14px !important; }
+.PopOverMenuContent a {color: #BABACA; text-decoration: none; font-size: 14px; }
+.PopOverMenuContent a[onclick] { color: #0088cc; }
+.PopOverMenuContent img { height: 72px; max-width: 72px; float: right; }
+.PopOverMenuContent > ul { list-style: none; padding: 0 !important; margin: 0 0 10px 25px !important; }
+.PopOverMenuContentItems li { margin-top: 1px; margin-bottom: 1px; }
+.SubSubMenuItem { padding-left: 40px !important; list-style: inherit; list-style-image: url("/Assets/Imgs/Themes/Default/Pages/Menu/arrowhead_right_12.png"); }
+
+/** Window Finder **/
+.WindowFinder { margin-left: 10px; height: 22px; border-radius: 3px; border: solid 1px #C6C6C6; padding: 1px 6px; }
+

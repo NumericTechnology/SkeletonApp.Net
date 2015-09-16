@@ -1,0 +1,17 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Clean.Master.cs" Inherits="WebProject.Master.Simple" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head runat="server">
+    <title><%= KPGlobalization.KPGlobalizationLanguage.GetString("Application_Title") %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Fonts/Ubuntu/UbuntuFont.css" Type="STYLESHEET" />
+
+    <asp:ContentPlaceHolder ID="HeadClean" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body runat="server">
+    <asp:ContentPlaceHolder ID="BodyClean" runat="server">
+    </asp:ContentPlaceHolder>
+</body>
+</html>

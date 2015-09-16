@@ -1,0 +1,1004 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F5F31458-8903-4717-A1C8-60991FB0D579}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebProject</RootNamespace>
+    <AssemblyName>WebProject</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit">
+      <HintPath>..\..\Assemblies\AjaxControlToolkit\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.ActiveRecord, Version=3.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\ActiveRecord\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="CSScriptLibrary">
+      <HintPath>..\..\Assemblies\CSScriptLibrary\NET 4.0\CSScriptLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\..\Assemblies\EPPlus 4.0.4\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="KPAttributes, Version=1.1.0.0, Culture=neutral, PublicKeyToken=cbb9e1b8bcdd8c2e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPAttributes.dll</HintPath>
+    </Reference>
+    <Reference Include="KPBO, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b47a486759ab78c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPBO.dll</HintPath>
+    </Reference>
+    <Reference Include="KPComponents, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b37c507011e87c6e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPComponents.dll</HintPath>
+    </Reference>
+    <Reference Include="KPComponentsCore, Version=1.1.0.0, Culture=neutral, PublicKeyToken=f515ebd584bfff56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPComponentsCore.dll</HintPath>
+    </Reference>
+    <Reference Include="KPCore, Version=1.1.0.0, Culture=neutral, PublicKeyToken=f8f8a2fe757943e9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPCore.dll</HintPath>
+    </Reference>
+    <Reference Include="KPData, Version=1.1.0.0, Culture=neutral, PublicKeyToken=f7a06dc7d76d0e7f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPData.dll</HintPath>
+    </Reference>
+    <Reference Include="KPEntity, Version=1.1.0.0, Culture=neutral, PublicKeyToken=d1971d8620c7d6c3, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPEntity.dll</HintPath>
+    </Reference>
+    <Reference Include="KPEnumerator, Version=1.1.0.0, Culture=neutral, PublicKeyToken=32587641a55973e4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPEnumerator.dll</HintPath>
+    </Reference>
+    <Reference Include="KPGlobalization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=b152458cc4d095ab, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\PLATANUM.NET\KPGlobalization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Report\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Report\Microsoft.ReportViewer.DataVisualization.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Report\Microsoft.ReportViewer.Design.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Report\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebDesign, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Report\Microsoft.ReportViewer.WebDesign.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\Report\Microsoft.ReportViewer.WebForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="mysql.data, Version=6.6.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\MySQL\mysql.data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.1.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assemblies\ActiveRecord\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.Validator">
+      <HintPath>..\..\Assemblies\NHibernate.Validator\NHibernate.Validator.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AssetLogin\Imgs\bg1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AssetLogin\Imgs\bg2.png" />
+    <Content Include="Assets\AssetLogin\Imgs\HQ-bg.jpg" />
+    <Content Include="Assets\AssetLogin\Imgs\HQ-bg2.png" />
+    <Content Include="Assets\AssetLogin\Imgs\progress_bar.gif" />
+    <Content Include="Assets\AssetLogin\Scripts\Login.js">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AssetLogin\Imgs\login-loading.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\UbuntuFont.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Alert\close.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Alert\alert-warning.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Alert\alert-error.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Alert\alert-info.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Alert\help.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Alert\warning-white.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Alert\error-white.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Alert\info-white.png" />
+    <Content Include="Assets\Imgs\Themes\Default\calendar.png" />
+    <Content Include="Assets\Imgs\Themes\Default\help.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ_calendar.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ_calendar16x16.png" />
+    <Content Include="Assets\Imgs\Themes\Default\loading-grid.gif" />
+    <Content Include="Assets\Imgs\Themes\Default\bg_modal.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Chart\column_chart.png" />
+    <Content Include="Assets\Imgs\Themes\Default\delete_line.png" />
+    <Content Include="Assets\Imgs\Themes\Default\error-icon-18.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ-error-icon-18.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ-error_icon-24.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ-tab-close-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\HQ-tab-close-white-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\HQ_bg_modal.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ_delete_line.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ_logout_gray.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ_logout_white.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ_settings_gray.png" />
+    <Content Include="Assets\Imgs\Themes\Default\HQ_settings_white.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Chart\line_chart.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Loading\loading2.gif" />
+    <Content Include="Assets\Imgs\Themes\Default\Loading\loading.gif" />
+    <Content Include="Assets\Imgs\Themes\Default\Loading\loading_crazy.gif" />
+    <Content Include="Assets\Imgs\Themes\Default\logout_gray.png" />
+    <Content Include="Assets\Imgs\Themes\Default\logout_white.png" />
+    <Content Include="Assets\Imgs\Themes\Default\menu_icon.png" />
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\dropdown.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Chart\pie_chart.png" />
+    <Content Include="Assets\Imgs\Themes\Default\pie_chart_add.png" />
+    <Content Include="Assets\Imgs\Themes\Default\settings_gray.png" />
+    <Content Include="Assets\Imgs\Themes\Default\settings_white.png" />
+    <Content Include="Assets\Imgs\Themes\Default\spacer.png" />
+    <Content Include="Assets\Imgs\Themes\Default\tab-close-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\tab-close-white-16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\tab-close-white.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\tab-close.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\window-close.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\loading.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Error\error.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\arrowhead_right_12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\arrowhead_right_36.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\configuracao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\financeiro.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\gestao.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\KpMenuBarFill.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\operacional.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\Pages\Menu\outros.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\window-title.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Imgs\Themes\Default\zoom.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Scripts\IntroJs\intro.min.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-af.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ar-DZ.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ar.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-az.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-be.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-bg.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-bs.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ca.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-cs.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-cy-GB.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-da.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-de.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-el.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-en-AU.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-en-GB.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-en-NZ.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-eo.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-es.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-et.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-eu.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-fa.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-fi.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-fo.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-fr-CA.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-fr-CH.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-fr.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-gl.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-he.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-hi.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-hr.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-hu.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-hy.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-id.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-is.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-it-CH.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-it.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ja.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ka.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-kk.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-km.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ko.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ky.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-lb.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-lt.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-lv.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-mk.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ml.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ms.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-nb.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-nl-BE.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-nl.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-nn.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-no.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-pl.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-pt-BR.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-pt.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-rm.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ro.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ru.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-sk.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-sl.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-sq.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-sr-SR.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-sr.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-sv.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-ta.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-th.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-tj.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-tr.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-uk.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-vi.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-zh-CN.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-zh-HK.js" />
+    <Content Include="Assets\Scripts\JQuery\i18n\datepicker-zh-TW.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.mask-1.5.2.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.mask.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery-ui.min.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.hotkeys.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.hotkeys.min.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.mask.min-1.5.2.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.maskMoney.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.maskMoney.min.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.menu-aim.js" />
+    <Content Include="Assets\Scripts\Themes\Default\KPZoom.js" />
+    <Content Include="Assets\Scripts\Themes\Default\KPTab.js" />
+    <Content Include="Assets\Scripts\Themes\Default\KPWindow.js" />
+    <Content Include="Assets\Scripts\Themes\Default\KPGridControl.js" />
+    <Content Include="Assets\Scripts\Themes\Default\KPMenu.js" />
+    <Content Include="Assets\Styles\IntroJs\introjs.min.css" />
+    <Content Include="Assets\Styles\IntroJs\Themes\introjs-dark.css" />
+    <Content Include="Assets\Styles\IntroJs\Themes\introjs-nassim.css" />
+    <Content Include="Assets\Styles\IntroJs\Themes\introjs-nazanin.css" />
+    <Content Include="Assets\Styles\IntroJs\Themes\introjs-royal.css" />
+    <Content Include="Assets\Styles\JQuery\images\animated-overlay.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_flat_0_aaaaaa_40x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_flat_0_eeeeee_40x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_flat_55_ffffff_40x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_flat_75_ffffff_40x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_glass_55_fbf9ee_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_glass_65_cbcee2_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_glass_65_ffffff_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_glass_75_dadada_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_glass_75_e6e6e6_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_glass_95_fef1ec_1x400.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_highlight-soft_100_f6f6f6_1x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_highlight-soft_25_0073ea_1x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_highlight-soft_50_dddddd_1x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-bg_highlight-soft_75_cccccc_1x100.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_0073ea_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_222222_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_2e83ff_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_454545_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_666666_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_888888_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_cd0a0a_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_ff0084_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\images\ui-icons_ffffff_256x240.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\jquery-ui-1.10.2.custom.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\jquery-ui-1.10.2.custom.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\jquery-ui.flick.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\jquery-ui.min.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\Themes\Default\KPTooltip.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\Themes\Default\KPZoom.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\Themes\Default\KPTab.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\Themes\Default\View.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\Themes\Default\KPWindow.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\Themes\Default\FrameworkStyles.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\Themes\Default\KPMenu.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\Themes\Default\Error.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ErrorPermission.aspx" />
+    <Content Include="FormFrw\FrmFrwActivityLog.aspx" />
+    <Content Include="FormFrw\FrmFrwActivityLogView.aspx" />
+    <Content Include="FormFrw\FrmFrwDatatype.aspx" />
+    <Content Include="FormFrw\FrmFrwDatatypeView.aspx" />
+    <Content Include="FormFrw\FrmFrwMenu.aspx" />
+    <Content Include="FormFrw\FrmFrwMenuView.aspx" />
+    <Content Include="FormFrw\FrmFrwParam.aspx" />
+    <Content Include="FormFrw\FrmFrwParamList.aspx" />
+    <Content Include="FormFrw\FrmFrwParamListView.aspx" />
+    <Content Include="FormFrw\FrmFrwParamValue.aspx" />
+    <Content Include="FormFrw\FrmFrwParamValueView.aspx" />
+    <Content Include="FormFrw\FrmFrwParamView.aspx" />
+    <Content Include="FormFrw\FrmFrwProfile.aspx" />
+    <Content Include="FormFrw\FrmFrwProfileView.aspx" />
+    <Content Include="FormFrw\FrmFrwProfileWindow.aspx" />
+    <Content Include="FormFrw\FrmFrwProfileWindowView.aspx" />
+    <Content Include="FormFrw\FrmFrwReleaseView.aspx" />
+    <Content Include="FormFrw\FrmFrwUserCompany.aspx" />
+    <Content Include="FormFrw\FrmFrwUserProfile.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="FormFrw\FrmFrwCompany.aspx" />
+    <Content Include="FormFrw\FrmFrwCompanyView.aspx" />
+    <Content Include="Logout.aspx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="FormFrw\FrmFrwComponent.aspx" />
+    <Content Include="FormFrw\FrmFrwWindow.aspx" />
+    <Content Include="FormFrw\FrmFrwComponentView.aspx" />
+    <Content Include="FormFrw\FrmFrwWindowView.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="FormFrw\FrmFrwUserView.aspx" />
+    <Content Include="FormFrw\FrmFrwUser.aspx" />
+    <Content Include="Assets\AssetLogin\Imgs\bg.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AssetLogin\Imgs\pass-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AssetLogin\Imgs\user-icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Error.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Assets\Scripts\Themes\Default\Framework.min.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-ar.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-bg.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-bg1251.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-cat.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-cn.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-cs.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-da.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-de.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-dk.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-el.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-es.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-fa.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-fi.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-fr.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-gl.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-he.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-hr.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-hr1250.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-hu.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-is.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-it.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-ja.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-jp.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-lt.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-mne.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-nl.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-no.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-pl.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-pt-br.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-pt.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-ro.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-ru.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-sk.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-sp.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-sr.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-sv.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-th.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-tr.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\i18n\grid.locale-ua.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="Assets\Scripts\JQuery\jqGrid\jquery.jqGrid.src.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery-1.9.1.min.js" />
+    <Content Include="Assets\Scripts\JQuery\jquery.mask.min.js" />
+    <Content Include="Assets\Styles\JQuery\jqGrid\ellipsis-xbl.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Styles\JQuery\jqGrid\ui.jqgrid.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AssetLogin\Styles\Login.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Global.asax" />
+    <Content Include="WCF\WCFAjaxJson.svc" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WCF\EntityService.svc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ErrorPermission.aspx.cs">
+      <DependentUpon>ErrorPermission.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPermission.aspx.designer.cs">
+      <DependentUpon>ErrorPermission.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwActivityLog.aspx.cs">
+      <DependentUpon>FrmFrwActivityLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwActivityLog.aspx.designer.cs">
+      <DependentUpon>FrmFrwActivityLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwActivityLogView.aspx.cs">
+      <DependentUpon>FrmFrwActivityLogView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwActivityLogView.aspx.designer.cs">
+      <DependentUpon>FrmFrwActivityLogView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwDatatype.aspx.cs">
+      <DependentUpon>FrmFrwDatatype.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwDatatype.aspx.designer.cs">
+      <DependentUpon>FrmFrwDatatype.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwDatatypeView.aspx.cs">
+      <DependentUpon>FrmFrwDatatypeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwDatatypeView.aspx.designer.cs">
+      <DependentUpon>FrmFrwDatatypeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwMenu.aspx.cs">
+      <DependentUpon>FrmFrwMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwMenu.aspx.designer.cs">
+      <DependentUpon>FrmFrwMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwMenuView.aspx.cs">
+      <DependentUpon>FrmFrwMenuView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwMenuView.aspx.designer.cs">
+      <DependentUpon>FrmFrwMenuView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParam.aspx.cs">
+      <DependentUpon>FrmFrwParam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParam.aspx.designer.cs">
+      <DependentUpon>FrmFrwParam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamList.aspx.cs">
+      <DependentUpon>FrmFrwParamList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamList.aspx.designer.cs">
+      <DependentUpon>FrmFrwParamList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamListView.aspx.cs">
+      <DependentUpon>FrmFrwParamListView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamListView.aspx.designer.cs">
+      <DependentUpon>FrmFrwParamListView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamValue.aspx.cs">
+      <DependentUpon>FrmFrwParamValue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamValue.aspx.designer.cs">
+      <DependentUpon>FrmFrwParamValue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamValueView.aspx.cs">
+      <DependentUpon>FrmFrwParamValueView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamValueView.aspx.designer.cs">
+      <DependentUpon>FrmFrwParamValueView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamView.aspx.cs">
+      <DependentUpon>FrmFrwParamView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwParamView.aspx.designer.cs">
+      <DependentUpon>FrmFrwParamView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwProfile.aspx.cs">
+      <DependentUpon>FrmFrwProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwProfile.aspx.designer.cs">
+      <DependentUpon>FrmFrwProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwProfileView.aspx.cs">
+      <DependentUpon>FrmFrwProfileView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwProfileView.aspx.designer.cs">
+      <DependentUpon>FrmFrwProfileView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwProfileWindow.aspx.cs">
+      <DependentUpon>FrmFrwProfileWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwProfileWindow.aspx.designer.cs">
+      <DependentUpon>FrmFrwProfileWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwProfileWindowView.aspx.cs">
+      <DependentUpon>FrmFrwProfileWindowView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwProfileWindowView.aspx.designer.cs">
+      <DependentUpon>FrmFrwProfileWindowView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwReleaseView.aspx.cs">
+      <DependentUpon>FrmFrwReleaseView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwReleaseView.aspx.designer.cs">
+      <DependentUpon>FrmFrwReleaseView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwUserCompany.aspx.cs">
+      <DependentUpon>FrmFrwUserCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwUserCompany.aspx.designer.cs">
+      <DependentUpon>FrmFrwUserCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwUserProfile.aspx.cs">
+      <DependentUpon>FrmFrwUserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwUserProfile.aspx.designer.cs">
+      <DependentUpon>FrmFrwUserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\GlobalizationResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalizationResource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwCompany.aspx.cs">
+      <DependentUpon>FrmFrwCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwCompany.aspx.designer.cs">
+      <DependentUpon>FrmFrwCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwCompanyView.aspx.cs">
+      <DependentUpon>FrmFrwCompanyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwCompanyView.aspx.designer.cs">
+      <DependentUpon>FrmFrwCompanyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwComponent.aspx.cs">
+      <DependentUpon>FrmFrwComponent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwComponent.aspx.designer.cs">
+      <DependentUpon>FrmFrwComponent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwWindow.aspx.cs">
+      <DependentUpon>FrmFrwWindow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwWindow.aspx.designer.cs">
+      <DependentUpon>FrmFrwWindow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwComponentView.aspx.cs">
+      <DependentUpon>FrmFrwComponentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwComponentView.aspx.designer.cs">
+      <DependentUpon>FrmFrwComponentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwWindowView.aspx.cs">
+      <DependentUpon>FrmFrwWindowView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwWindowView.aspx.designer.cs">
+      <DependentUpon>FrmFrwWindowView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Clean.Master.cs">
+      <DependentUpon>Clean.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Clean.Master.designer.cs">
+      <DependentUpon>Clean.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\View.Master.cs">
+      <DependentUpon>View.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\View.Master.designer.cs">
+      <DependentUpon>View.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwUserView.aspx.cs">
+      <DependentUpon>FrmFrwUserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwUserView.aspx.designer.cs">
+      <DependentUpon>FrmFrwUserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwUser.aspx.cs">
+      <DependentUpon>FrmFrwUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormFrw\FrmFrwUser.aspx.designer.cs">
+      <DependentUpon>FrmFrwUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Base.Master.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Base.Master.designer.cs">
+      <DependentUpon>Base.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Simple.Master.cs">
+      <DependentUpon>Simple.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Simple.Master.designer.cs">
+      <DependentUpon>Simple.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Error.Master.cs">
+      <DependentUpon>Error.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Error.Master.designer.cs">
+      <DependentUpon>Error.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Login.Master.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Login.Master.designer.cs">
+      <DependentUpon>Login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Register.Master.cs">
+      <DependentUpon>Register.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Master\Register.Master.designer.cs">
+      <DependentUpon>Register.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WCF\EntityService.svc.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>EntityService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="WCF\WCFAjaxJson.svc.cs">
+      <DependentUpon>WCFAjaxJson.svc</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Register.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Login.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpecialistBO\SpecialistBO.csproj">
+      <Project>{EE4849B0-DCA6-4270-8AFF-F10858E81ECD}</Project>
+      <Name>SpecialistBO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpecialistData\SpecialistData.csproj">
+      <Project>{E21963E4-C5AD-4557-B127-8C462B388E0C}</Project>
+      <Name>SpecialistData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpecialistEntity\SpecialistEntity.csproj">
+      <Project>{8D1EEA34-C5AF-448D-BB2D-963B3241AC27}</Project>
+      <Name>SpecialistEntity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SpecialistEnumerator\SpecialistEnumerator.csproj">
+      <Project>{2a0415b1-ffbc-4980-a865-a5cc21b33ef7}</Project>
+      <Name>SpecialistEnumerator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Base.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Error.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Master\Simple.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-B-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-BI-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-C-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-L-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-LI-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-M-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-MI-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-R-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Fonts\Ubuntu\Ubuntu-RI-webfont.ttf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Master\View.Master" />
+    <Content Include="Master\Clean.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Scripts\JQuery\jquery.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\PDCA.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Imgs\Client\" />
+    <Folder Include="Form\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\GlobalizationResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GlobalizationResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>7985</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:6909/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>http://localhost/TrazRapido</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

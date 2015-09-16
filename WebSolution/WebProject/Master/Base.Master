@@ -1,0 +1,78 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Base.Master.cs" Inherits="WebProject.Master.Base" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//PT" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br">
+<head runat="server">
+    <title><%= KPGlobalization.KPGlobalizationLanguage.GetString("Application_Title") %></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Styles/JQuery/jquery-ui.flick.min.css" Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Styles/JQuery/jqGrid/ui.jqgrid.css" Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Fonts/Ubuntu/UbuntuFont.css" Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Styles/Themes/Default/FrameworkStyles.css" Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Styles/Themes/Default/KPWindow.css" Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Styles/IntroJs/introjs.min.css" Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Styles/IntroJs/Themes/introjs-nazanin.css" Type="STYLESHEET" />
+
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/JQuery/jquery-1.9.1.min.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/JQuery/jquery-ui.min.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/JQuery/jquery.hotkeys.min.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/JQuery/jquery.mask.min.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/JQuery/jquery.maskMoney.js" Type="JAVASCRIPT" />
+
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/JQuery/jqGrid/i18n/grid.locale-pt-br.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/JQuery/jqGrid/jquery.jqGrid.min.js" Type="JAVASCRIPT" />
+
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/Themes/Default/Framework.min.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/Themes/Default/KPWindow.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Scripts/IntroJs/intro.min.js" Type="JAVASCRIPT" />
+    
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-23477249-9', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="FormBase" runat="server">
+    <ACT:ToolkitScriptManager ID="ScriptManagerBase" EnablePageMethods="true"
+        EnablePartialRendering="true" runat="server"></ACT:ToolkitScriptManager>
+    <asp:ContentPlaceHolder ID="ContentMenu" runat="server"></asp:ContentPlaceHolder>
+
+    <div class="Content">
+        <asp:ContentPlaceHolder ID="FormBody" runat="server"></asp:ContentPlaceHolder>
+        <div id="KPModalComponent" style="display: none;">
+        </div>
+    </div>
+    </form>
+</body>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        //        $(this).tooltip({
+        //            position: {
+        //                my: "center top",
+        //                at: "center bottom+5"
+        //            },
+        //            show: {
+        //                duration: "fast"
+        //            }
+        //        });
+
+
+
+        // jQuery(document).bind('keypress', 'Alt+N', function (evt) { alert("Alt+N - Novo..."); return false; });
+        // jQuery(document).bind('keypress', 'Alt+A', function (evt) { alert("Alt+A - Alterar..."); return false; });
+        // jQuery(document).bind('keypress', 'Alt+E', function (evt) { alert("Alt+E - Excluir..."); return false; });
+
+    });
+</script>
+</html>

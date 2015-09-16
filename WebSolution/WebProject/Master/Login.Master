@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="WebProject.Master.Login" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title><%= KPGlobalization.KPGlobalizationLanguage.GetString("Application_Title") %></title>
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Fonts/Ubuntu/UbuntuFont.css" Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/AssetLogin/Styles/Login.css" Type="STYLESHEET" />
+    
+    <KP:KPAssetLoader ID="KPAssetLoader1" runat="server" Source="~/Assets/Scripts/JQuery/jquery-1.9.1.min.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader ID="KPAssetLoader2" runat="server" Source="~/Assets/Scripts/JQuery/jquery-ui.min.js" Type="JAVASCRIPT" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/AssetLogin/Scripts/Login.js" Type="JAVASCRIPT" />
+      
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-23477249-9', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="HeadLogin" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="FormBase" runat="server">
+        <ACT:ToolkitScriptManager ID="ScriptManagerLogin" EnablePageMethods="true" runat="server">
+        </ACT:ToolkitScriptManager>
+        <div id="wrapper">
+            <div class="user_icon round_border_5">
+            </div>
+            <div class="pass_icon round_border_5">
+            </div>
+            <!--LOGIN FORM-->
+            <div class="login_form">
+                <!--HEADER-->
+                <div class="header">
+                    <h1 class="header_title"><%= KPGlobalization.KPGlobalizationLanguage.GetString("Application_LoginAccess") %></h1>
+                    <span class="header_description"><%= KPGlobalization.KPGlobalizationLanguage.GetString("Application_LoginFillFields") %></span>
+                </div>
+                <div class="loading_bar" style="display: none;">
+                </div>
+                <!--END HEADER-->
+                <div class="full_content">
+                    <asp:UpdatePanel runat="server">
+                        <ContentTemplate>
+                            <!--CONTENT-->
+                            <div class="content">
+                                <asp:TextBox runat="server" ID="txtUserLogin" CssClass="input_field username" ToolTip="Login"></asp:TextBox>
+                                <ACT:TextBoxWatermarkExtender ID="txtUserLogin_TextBoxWatermarkExtender" runat="server"
+                                    Enabled="True" TargetControlID="txtUserLogin" WatermarkText="Usuário">
+                                </ACT:TextBoxWatermarkExtender>
+                                <asp:TextBox runat="server" ID="txtUserPassword" CssClass="input_field password" TextMode="Password"
+                                    ToolTip="Password"></asp:TextBox>
+                                <ACT:TextBoxWatermarkExtender ID="txtUserPassword_TextBoxWatermarkExtender" runat="server"
+                                    Enabled="True" TargetControlID="txtUserPassword" WatermarkText="Senha">
+                                </ACT:TextBoxWatermarkExtender>
+                            </div>
+                            <!--END CONTENT-->
+                            <!--FOOTER-->
+                            <div class="footer">
+                                <asp:Button ID="btnEnter" runat="server" Text="Entrar" CssClass="button" OnClick="btnEnter_Click" />
+                                <asp:LinkButton ID="lnkForgotPass" runat="server" class="forgot_password"><%= KPGlobalization.KPGlobalizationLanguage.GetString("Application_ForgotPassword") %></asp:LinkButton>
+                            </div>
+                            <!--END FOOTER-->
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="BodyLogin" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

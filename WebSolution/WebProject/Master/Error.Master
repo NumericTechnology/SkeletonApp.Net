@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Master/Base.Master" AutoEventWireup="true"
+    CodeBehind="Error.Master.cs" Inherits="WebProject.Master.Error" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="Head" runat="server">    
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Fonts/Ubuntu/UbuntuFont.css" Type="STYLESHEET" />
+    <KP:KPAssetLoader runat="server" Source="~/Assets/Styles/Themes/Default/Error.css" Type="STYLESHEET" />
+
+    <asp:ContentPlaceHolder ID="HeadError" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="FormBody" runat="server">
+    <div class="KPErrorBody">
+        <label class="KPErrorTitle"><%= KPGlobalization.KPGlobalizationLanguage.GetString("Application_MessageError") %></label>
+        <asp:ContentPlaceHolder ID="BodyError" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>
