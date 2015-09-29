@@ -19,7 +19,7 @@
         </KPColumnsModel>
         <KPFormZoomConfig>
             <KP:KPFormZoomModel ZoomID="ZoomobjIdWindow" TypeEntityNamespace="KPEntity.ORM.FrwWindow" WindowTitle="Translate_ZoomWindowTitleWindow"
-                FieldReturnId="IdWindow" FieldReturnText="WindowTitle" WidthZoom="400" HeightZoom="210" PropertyCompanyEntity="objIdCompany">
+                FieldReturnId="IdWindow" FieldReturnText="WindowTitle" WidthZoom="400" HeightZoom="210">
                 <KPZoomFieldsConfig>
                     <KP:KPColumnModel FieldName="IdWindow" Width="100" />
                     <KP:KPColumnModel FieldName="WindowTitle" Width="100" />
